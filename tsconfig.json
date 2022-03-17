@@ -1,0 +1,38 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+    ".eslintrc.cjs",
+    ".prettierrc.cjs",
+    "vite.config.ts",
+    "postcss.config.cjs",
+    "svelte.config.cjs"
+  ],
+  "exclude": ["node_modules/*", "dist"],
+  "compilerOptions": {
+    "outDir": "build",
+    "lib": ["DOM", "ES2017", "WebWorker"],
+    "esModuleInterop": true,
+    "composite": true,
+    "importsNotUsedAsValues": "remove",
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "noEmitHelpers": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false
+  }
+}
